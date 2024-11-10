@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+       <!-- daisy and tailwind -->
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- font-awsome -->
+      <script src="https://kit.fontawesome.com/d534362675.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="head-container mx-auto">
+
+        <!-- navbar -->
+
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>Edit</a></li>
+                  <li><a>Add</a></li>
+                  <li><a>Flag</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-2xl font-bold">Attribute</a>
+            </div>
+            
+            <div class="navbar-center hidden lg:flex lg:ml-[900px]">
+              <ul class="menu menu-horizontal px-1 gap-3 ">
+                <div class="tooltip tooltip-bottom" data-tip="Home">
+                    <button class="btn lg:rounded-full lg:w-14 lg:border lg:border-solid lg:border-gray-300"><i class="fa-solid fa-house"></i></button>
+                  </div>
+                  <div class="tooltip tooltip-bottom" data-tip="Edit">
+                    <button class="btn lg:rounded-full lg:w-14 lg:border lg:border-solid lg:border-gray-300"><i class="fa-solid fa-pen"></i></button>
+                  </div>
+                  <div class="tooltip tooltip-bottom" data-tip="Add">
+                    <button class="btn lg:rounded-full lg:w-14 lg:border lg:border-solid lg:border-gray-300"><i class="fa-solid fa-user-plus"></i></button>
+                  </div>
+                  <div class="tooltip tooltip-bottom" data-tip="Flag">
+                    <button class="btn lg:rounded-full lg:w-14 lg:border lg:border-solid lg:border-gray-300"><i class="fa-solid fa-flag"></i></button>
+                  </div> 
+                 
+              
+              </ul>
+            </div>
+            <div class="navbar-end rounded-lg text-center ">
+              <a class=" h-8 rounded 3xl lg:rounded-3xl bg-[#797DFC] text-white lg:w-[100px] hidden lg:block text-lg">Sign in</a>
+            </div>
+            
+          </div>
+           
+          <!-- Banner section -->
+          <!-- <section class=" lg:h-[100px] lg:w-[1250px] mx-auto lg:mt-10 ">
+            <div class="hero min-h-screen bg-base-200 bg-[#12132D] rounded-2xl">
+                
+                <div class="hero-content">
+                  <div class="border border-solid border-red-500 lg:h-96  lg:mr-80 ">
+                    <h1 class="lg:text-7xl font-bold text-white lg:mr-64 ">Welcome to the <br><span class="text-blue-500">Attribute</span>  Forum</h1>
+                    <p class="py-6 text-white lg:text-2xl lg:mr-[150px]">Share your favorite opinion and win and wp forum coffee mug!</p>
+                    <div class="flex gap-3 my-8"><label class="input input-bordered flex items-center gap-2 rounded-3xl">
+                        <input type="text" class="grow" placeholder="Search" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
+                      </label>
+                    <button class="btn btn-primary rounded-3xl">Search</button></div>
+                  </div>
+                  <div class="lg:h-80 lg:w-[500px] bg-white mr-36">
+
+                  </div>
+                </div>
+              
+                </div>
+              </div>
+
+              <h1>hello</h1>
+          </section> -->
+          <section class="hero-section mb-10">
+            <div class="hero p-5 lg:p-10 min-h-[500px]">
+              <div
+                class="hero-content flex-col lg:flex-row p-10 gap-10 lg:p-24 2lg:p-20 lg:gap-10 bg-[#12132D] bg-bottom bg-no-repeat rounded-3xl min-h-full"
+                style="background-image: url(images/bgbanner.png);"
+              >
+                <div class="text-center lg:text-left">
+                  <h1 class="text-5xl text-white font-extrabold">
+                    Welcome to the
+                    <br>
+                    <span
+                      class="bg-gradient-to-r from-[#797DFC] to-[#454AF8] inline-block text-transparent bg-clip-text"
+                      >Attribute</span
+                    >
+                    
+
+                    Forum
+                  </h1>
+                  <p class="py-6 text-white">
+                    Share your favorite opinion and win and wp forum coffee mug!
+                  </p>
+    
+                  <form class="max-w-md rounded-full">
+                    <label
+                      for="default-search"
+                      class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                      >Search</label
+                    >
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                          />
+                        </svg>
+                      </div>
+                      <!-- Input feild -->
+                      <input
+                        type="text"
+                        id="searchf"
+                        class="block w-full p-4 ps-10 text-white font-normalS border-gray-300 rounded-lg bg-gray-700"
+                        placeholder="Search..."
+                        required
+                      />
+                      <!-- Search Button -->
+                      <button
+                        type="submit"
+                        class="text-white absolute end-2.5 bottom-2.5 bg-[#797DFC] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-[#797DFCs] dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                      >
+                        Search
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="card shrink-0 w-[270px] max-w-sm shadow-2xl bg-base-100 p-5"
+                >
+                  <div class="flex justify-between p-3">
+                    <p class="text-gray-700 font-normalx">Registered users:</p>
+                    <p class="text-gray-700 font-normalx">01</p>
+                  </div>
+                  <div class="flex justify-between p-3">
+                    <p class="text-gray-700 font-normalx">Forum :</p>
+                    <p class="text-gray-700 font-normalx">05</p>
+                  </div>
+                  <div class="flex justify-between p-3">
+                    <p class="text-gray-700 font-normalx">Topics :</p>
+                    <p class="text-gray-700 font-normalx">03</p>
+                  </div>
+                  <div class="flex justify-between p-3">
+                    <p class="text-gray-700 font-normalx">Replies :</p>
+                    <p class="text-gray-700 font-normalx">01</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </header>
+    <main class="sm:mx-auto lg:mx-auto">
+        <section>
+            <div class="ml-20">
+        <h1 class="text-center text-4xl font-extrabold ">Let’s Discuss</h1>
+        <p class="text-center text-gray-500 mt-5 ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+        <!-- main sections big div -->
+          <!-- Post section -->
+          <section class=" block lg:flex ml-8 mb-4 w-full">
+          <section >
+          <div id="hellop"class="flex flex-col  mx-auto border-rose-500  p-1 lg:p-5 gap-5">
+            <!-- dynamic post -->
+            <div class="flex flex-col lg:min-w-[600px]  border-green-800 lg:p-5 rounded-xl shadow-xl ">
+  
+              <!-- boiler card component -->
+              <div class="flex flex-col rounded-2xl shadow-2xl hover:border-2 border-black  p-1 lg:p-5">
+                  <div class="flex flex-col lg:flex-row gap-2 lg:gap-8 border-b-2 border-dashed border-gray-600 rounded-lg p-0 lg:p-5">
+                      <!-- Avatar -->
+                      <div class="avatar online border-blue-500 p-5">
+                          <div class="w-24 rounded-full">
+                            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                          </div>
+                        </div>
+                      <!-- Details -->
+                      <div class="flex flex-col border-red-500 p-5">
+                          <!-- Category & Author -->
+                          <div class="flex gap-10">
+                              <p class="text-gray-700 text-sm font-bold">#Music</p>
+                              <p class="text-gray-700 text-sm font-bold">Author : <span>Mahe ALif</span></p>
+                          </div>
+  
+                          <!-- Description -->
+                          <div class="flex flex-col">
+                              <h3 class="text-2xl text-gray-900 font-semibold">10 Kids unaware of their results</h3>
+                              <p class="text-gray-700 text-sm font-semibold">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- comment view & marked -->
+                  <div class="flex justify-between">
+                      <!-- comment, view & posted time -->
+                      <div class="flex lg:ml-52 p-3 gap-5">
+                          <p class="flex items-center text-gray-700 text-sm font-semibold"><i class="fa-regular fa-message"></i> 540</p>
+                          <p class="flex items-center text-gray-700 text-sm font-semibold"><i class="fa-regular fa-eye"></i> 7840</p>
+                          <p class="flex items-center text-gray-700 text-sm font-semibold"><i class="fa-regular fa-clock"></i> 5 min </p>
+                      </div>
+                      <!-- marked part -->
+                      <button class="hover:border-2 hover:shadow-xl hover:border-red-500 m-3 rounded-full"><img src="images/lam.png" alt=""></button>
+                  </div>
+              </div>
+            </div>
+           </section>
+            <!-- Marked post -->
+            <div id="mork"class="flex flex-col  w-[350px]  bg-gray-100 border-blue-600 p-5 gap-3 rounded-lg shadow-xl">
+              <div class="flex justify-between">
+                  <h3 class="text-sm text-gray-900 font-semibold">Tittle</h3>
+                  <p class="flex gap-2 text-sm text-gray-700 font-semibold"><img src="images/tik.png" alt="">Marked as read (<span id="marked">4</span>)</p>
+              </div>
+              <!-- dynamically added post tittle and viewCount -->
+              <!-- Boiler card -->
+              <div class="flex rounded-md shadow-md p-3 bg-white">
+                  <h3 class="text-xl text-gray-700 font-semibold ">10 Kids unaware of their results</h3>
+                  <p class="flex items-center text-gray-700 text-sm font-semibold"><img src="images/eye.png" alt=""> 7840</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+          <section class="ml-8 mt-5 hero-section mb-10 w-[320px] lg:w-[1300px] lg:p-10">
+            <div class="hero p-3 lg:p-10  bg-[#12132D] bg-bottom bg-no-repeat rounded-3xl min-h-full"style="background-image: url(icon/Group\ 8.png)"  >
+              <div class="hero-content flex-col lg:flex-row p-3 gap-10 lg:p-16 2lg:p-16 lg:gap-10 " >
+                <div class="text-center lg:text-left">
+                  <h1 class="text-5xl text-white font-extrabold">
+                    Join our forum
+                  </h1>
+                  <p class="py-6 text-white">
+                    Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. 
+                  </p>
+    
+                  <button  class="bg-[#797DFC] p-3 text-white font-semibold text-2xl rounded-lg shadow-lg hover:bg-[#3138FF] hover:border-2 hover:border-white">Register now !</button>
+                </div>
+                <div
+                  class="card shadow-2xl p-5 bg-no-repeat"
+                >
+                  <img src="images/joinforum.png" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+             <!-- Latest post section -->
+      <section class="flex flex-col ml-2 w-full mb-5 ">
+        <div class="flex flex-col items-center justify-center gap-6 border-rose-500 p-5 m-5">
+            <h1 class="text-4xl text-gray-800 font-bold text-center ml-20">Latest Posts</h1>
+            <p
+              class="text-lg sm:text-center text-gray-800 font-normal px-5 lg:px-28 text-center ml-20"
+            >
+            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+
+          <!-- Boiler cards for latest posts -->
+          <div class=" ml-11 lg:mx-auto flex flex-col lg:flex-row mt-5 max-w-[1170px] mx-auto gap-5"id="latest-news-section">
+            <!-- boiler card post-1 -->
+           
+          </div>
+      </section>   
+    </section>
+   
+    </main>
+
+    <footer class="mt-10 w-[405px] lg:w-full bg-gray-200 h-[350px]">
+        <footer class="footer footer-center p-10 bg-gray-200 text-primary-content h-60 ">
+            <aside>
+              
+              <p class="font-bold text-5xl text-black">Attribute  
+            </aside> 
+            <p class="text-black text-lg">providing the best suitable news for your life</p>
+            <nav>
+              <div class="grid grid-flow-col gap-4 text-black ">
+                <a><i class="fa-brands fa-twitter"></i></a>
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-solid fa-play"></i></a>
+              </div>
+
+            </nav>
+            <div class="border-dotted border-2 border-gray-500 w-full">
+            </div>
+            <p class="text-black text-center">2017, All Rights Reserved.</p>
+           
+          </footer>
+    </footer>
+
+   
+    
+    
+    <script src="js/use.js"></script>
+</body>
+</html>
